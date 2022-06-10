@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+.background{
+    background:linear-gradient(135deg,hsla(348,97%,63%,0.6),hsla(230,96%,62%,0.6)), url("images/test3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    padding: 0 5rem;
+}
+
+.container{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+    height: 90px;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none; 
+    gap: 1rem;
+}
+.nav ul li{
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    text-align: center;
+}
+.nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+}
+#adminlogin,#userlogin,#usersignup,#playeradd{
+    background-color: rgb(29, 127, 202);
+    width: 30%;
+    border-radius: 25px;
+    padding: 1.5rem 2rem;
+    padding-bottom: 0;
+    color: white;
+    position: relative;
+}
+#usersignup{
+    width: 40%;
+    padding-bottom:0.2rem ;
+}
+#playeradd{
+    width:50% ;
+    background-color: grey;
+}
+
+input[type="text"],input[type="password"],input[type="email"],input[type="number"],
+input[type="text"],input[type="password"],input[type="email"],
+input[type="text"],input[type="password"]
+{
+    width: 100%;
+    padding:0.4rem 0.7rem;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+h1{
+    text-align: center;
+}
+.subrow{
+    margin: 1rem 0;
+}
+.subrow label{
+    margin-bottom: 0.6rem;
+    display: block;
+    font-size: 1.2rem;
+    /* border: 2px solid red; */
+}
+
+.cbtn{
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#userlogin{
+    background-color: coral;
+}
+#usersignup{
+    background-color: brown;
+}
+.subrow p{
+    text-align: center;
+}
+
+.welcomep{
+    color: white;
+    font-size: 2rem;
+}
+
+span{
+    color: aqua;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.table .ptable{
+    width: 100%;
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.table .ptable th{
+    border: 1px solid white;
+}
+.table .ptable td,th{
+    padding:0.4rem 0.6rem;
+    border: 1px solid white;
+    font-size: 1.1rem;
+}
+.table .ptable td{
+    background-color: grey;
+}
+.table .ptable th{
+    background-color: darkcyan;
+}
+.table .ptable tbody tr td:last-child{
+    background-color: skyblue;
+}
+#ownteam{
+    margin: 1rem;
+    text-align: center;
+    padding: 0.4rem 0.7rem;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid white;
+
+}
+#ownteam a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#smallmenuopen,#smallmenuclose{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav,#smallmenuclose{
+        display: none;
+    }
+    .nav{
+        /* position: absolute; */
+
+    }
+    .background{
+        padding: 0;
+    }
+    .nav ul{
+        flex-direction: column;
+    }
+    #smallmenuopen button,#smallmenuclose button{
+        font-size: 3.5rem;
+        margin: 1rem;
+        cursor: pointer;
+        background: transparent;
+        color: white;
+        border: none;
+    }
+    #smallmenuopen{
+        display: block;
+    }
+    .smallmenu{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* position: relative */
+    }
+    .nav ul li{
+        padding: 0.3rem 0.3rem;
+        width: 100%;
+    
+    }
+    .nav ul li a{
+        font-size: 0.9rem;
+    }
+}
